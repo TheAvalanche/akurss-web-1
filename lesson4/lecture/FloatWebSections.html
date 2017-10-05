@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+	* {
+		box-sizing: border-box;
+	}
+
+	p {
+		margin-top: 0;
+	}
+
+	.header, .footer {
+		background-color: purple;
+		color: white;
+		padding: 15px;
+	}
+	.column {
+		float: left;
+		padding: 15px;
+	}
+	.clearfix::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	.menu {
+		width: 25%;
+	}
+	.content {
+		width: 75%;
+	}
+	.menu ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	.menu li {
+		padding: 8px;
+		margin-bottom: 4px;
+		background-color: purple;
+		color: #ffffff;
+	}
+	.menu li:hover {
+		background-color: violet;
+	}
+</style>
+<body>
+<div class="header">
+	<h1>Lorem</h1>
+</div>
+
+<div class="clearfix">
+	<div class="column menu">
+		<ul>
+			<li>Lorem</li>
+			<li>Ipsum</li>
+			<li>Dolor</li>
+			<li>Sit</li>
+		</ul>
+	</div>
+
+	<div class="column content">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi excepturi est accusamus voluptatem dolor id! Quo nihil blanditiis minus vel voluptate dicta. Obcaecati aut alias, repudiandae assumenda quaerat facere modi.</p>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel quod dolores repellat dignissimos ratione. Voluptatum similique odit nam ipsa? Non corrupti blanditiis animi error dolorem! Hic labore autem a dolorem.</p>
+	</div>
+</div>
+
+<div class="footer">
+	<p>Lorem ipsum</p>
+</div>
+</body>
+</html>

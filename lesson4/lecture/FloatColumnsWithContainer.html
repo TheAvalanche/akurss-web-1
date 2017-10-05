@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+	* {
+		box-sizing: border-box;
+	}
+
+	div {
+		border: solid 1px red;
+	}
+
+	.column {
+		float: left;
+		padding: 15px;
+	}
+
+	.left {
+		width: 50%;
+	}
+
+	.main {
+		width: 50%;
+		height: 100%;
+	}
+
+	.footer {
+		clear: both;
+	}
+
+	.container {
+		background-color: lightgrey;
+		border: solid 1px green;
+		margin: 10px;
+		padding: 10px;
+	}
+
+	.clearfix:after {
+		content: "";
+		visibility: hidden;
+		display: block;
+		height: 0;
+		clear: both;
+	}
+</style>
+<body>
+<div class="container clearfix">
+	<div class="column left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+	<div class="column main">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </div>
+</div>
+<div class="footer">Some Footer</div>
+</body>
+</html>

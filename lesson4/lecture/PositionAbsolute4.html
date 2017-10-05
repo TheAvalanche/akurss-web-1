@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		div {
+			border: solid 1px red;
+			padding: 10px;
+			margin: 10px;
+		}
+
+		.parent {
+			position: relative;
+		}
+
+		.child2 {
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		Parent element
+		<div class="child">
+			Static child element
+		</div>
+	</div>
+	
+	<div class="parent">
+		Parent element
+		<div class="child2">
+			Absolute child element
+		</div>
+	</div>
+</body>
+</html>
