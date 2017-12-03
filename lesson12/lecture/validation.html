@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Validation</title>
+
+    <style>
+      input {
+        display: block;
+        height: 2rem;
+        margin: 0.5rem 0;
+        border: 1px solid gray;
+        border-radius: 5px;
+      }
+      button {
+        display: block;
+        margin: 0.5rem 0;
+        height: 2rem;
+        border: 1px solid darkblue;
+        border-radius: 5px;
+        background-color: blue;
+        color: white;
+      }
+
+      .error {
+        padding: 15px;
+        border: 1px solid darkred;
+        border-radius: 5px;
+        color: white;
+        background-color: red;
+      }
+    </style>
+
+  </head>
+  <body>
+    <form name="test" onsubmit="return false;">
+      <label>Enter number</label><br>
+      <input type="text" name="testInput" id="testInput">
+      <button id="submit">Submit</button>
+    </form>
+
+
+    <div id="info"></div>
+
+    <button id="back">Back</button>
+
+    <script>
+      var buttons = document.getElementsByTagName("button");// [button#submit, button#back]
+      var submitButton = buttons[0]; //button#submit
+
+      submitButton.addEventListener("click", validate); //submitButton.onClick = validate;
+
+      function validate() {
+        var form = document.forms["test"]; //form[name="test"]
+        var input = form["testInput"]; //input[name="testInput"]
+        var value = input.value; //value == "blablabla"
+
+        if (!isNumeric(value)) { //false as blablabla is not a number
+          var el = document.createElement("div"); //virtual <div></div>
+          el.className = "error"; //virtual <div class="error"></div>
+          var text = document.createTextNode("Should be numeric!"); //text: Should be numeric!
+          el.appendChild(text); //virtual <div class="error">Should be numeric!</div>
+
+          document.getElementById("info").appendChild(el); //adding to div#info
+
+          setTimeout(function() {
+            el.parentNode.removeChild(el); //el == div.error
+                                           //el.parentNode == div#info
+                                           //div#info remove child div.error
+          }, 3000)
+
+        }
+
+      }
+
+      function isNumeric(n) {
+        return isFinite(n) && !isNaN(parseFloat(n));
+      }
+
+    </script>
+  </body>
+</html>

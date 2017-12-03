@@ -1,0 +1,19 @@
+.accordion {
+  background-color: #ccc;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  transition: background-color 0.5s;
+}
+
+.accordion:hover, .accordion.active {
+  background-color: #aaa;
+}
+
+.panel {
+  padding: 20px;
+  display: none;
+  background-color: white;
+}

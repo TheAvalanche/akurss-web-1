@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		.alert {
+			padding: 15px;
+			border: 1px solid #84001c;
+			border-radius: 4px;
+			color: rgb(0, 0, 0);
+			background-color: #f01e00;
+		}
+	</style>
+</head>
+<body>
+	<form name="test" onsubmit="return false;">
+		<input type="text" name="testInput" id="testInput">
+		<button id="submit">Submit</button>
+	</form>
+
+
+	<div id="info">
+		
+	</div>
+
+	<script>
+		document.getElementsByTagName("button")[0].addEventListener("click", validate);
+		
+		function validate() {
+			var value = document.forms["test"]["testInput"].value;
+			if (!isNumeric(value)) {
+				var el = document.createElement("p");
+				el.className = "alert";
+				var text = document.createTextNode("Should be numeric");
+				el.appendChild(text);
+				
+				document.getElementById("info").appendChild(el);
+
+				setTimeout(function() {
+					el.parentNode.removeChild(el);
+				}, 3000);
+			}
+		}
+		
+		function isNumeric(n) {
+			return isFinite && !isNaN(parseFloat(n));
+		}
+	</script>
+</body>
+</html>

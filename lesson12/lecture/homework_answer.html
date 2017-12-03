@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Add</title>
+	<script>
+		function addToList() {
+			var form = document.forms["personForm"];
+			var name = form["name"].value;
+			var surname = form["surname"].value;
+
+			var ul = document.getElementById("list");
+			var li = document.createElement("li");
+			li.appendChild(document.createTextNode(name + " " + surname));
+			ul.appendChild(li);
+		}
+
+	</script>
+</head>
+<body>
+	<h1>Person list</h1>
+	
+	<ul id="list">
+	</ul>
+
+	<form name="personForm" onsubmit="return false;">
+		<label for="name">Name</label>
+		<input id="name" type="text" name="name" placeholder="Enter name">
+		<label for="surname">Surname</label>
+		<input id="surname" type="text" name="surname" placeholder="Enter surname">
+		<button id="add" type="button" onclick="addToList();">Add</button>
+	</form>
+	
+
+
+</body>
+</html>
