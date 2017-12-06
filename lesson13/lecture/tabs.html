@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {font-family: Arial;}
+
+		/* Style the tab */
+		div.tab {
+			overflow: hidden;
+			border: 1px solid #53cc97;
+			background-color: #89f192;
+		}
+
+		/* Style the buttons inside the tab */
+		div.tab button {
+			background-color: inherit;
+			float: left;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			padding: 14px 16px;
+			transition: 0.3s;
+			font-size: 17px;
+		}
+
+		/* Change background color of buttons on hover */
+		div.tab button:hover {
+			background-color: #19dd55;
+		}
+
+		/* Create an active/current tablink class */
+		div.tab button.active {
+			background-color: #19dd55;
+		}
+
+		/* Style the tab content */
+		.tabcontent {
+			display: none;
+			padding: 6px 12px;
+			-webkit-animation: fadeEffect 1s;
+			animation: fadeEffect 1s;
+		}
+
+		/* Fade in tabs */
+		@-webkit-keyframes fadeEffect {
+			from {opacity: 0;}
+			to {opacity: 1;}
+		}
+
+		@keyframes fadeEffect {
+			from {opacity: 0;}
+			to {opacity: 1;}
+		}
+	</style>
+</head>
+<body>
+
+<div class="tab">
+	<button class="tablinks" onclick="openCity(event, 'html')">HTML</button>
+	<button class="tablinks" onclick="openCity(event, 'css')">CSS</button>
+	<button class="tablinks" onclick="openCity(event, 'javascript')">Javascript</button>
+</div>
+
+<div id="html" class="tabcontent">
+	<h3>HTML</h3>
+	<p>HTML is great.</p>
+</div>
+
+<div id="css" class="tabcontent">
+	<h3>CSS</h3>
+	<p>CSS can be tricky.</p>
+</div>
+
+<div id="javascript" class="tabcontent">
+	<h3>Javascript</h3>
+	<p>Javascript is pain.</p>
+</div>
+
+<script>
+	function openCity(evt, name) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(name).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+</script>
+
+</body>
+</html> 
