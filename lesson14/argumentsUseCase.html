@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	var user = {
+		name: "John",
+		surname: "Smith"
+	};
+	
+	var user2 = {
+		age: 21,
+		name: "Anna"
+	};
+	
+	var user3 = {
+		email: "test@test.com"
+	};
+	
+	var user4 = copyProperties({}, user, user2, user3);
+	
+	function copyProperties() {
+		var destination  = arguments[0];
+		
+		for (var i = 1; i < arguments.length; i++) {
+			console.log(arguments[i]);
+			var source = arguments[i];
+			console.log("Starting iteration");
+			for (var key in source) {
+				console.log(key);
+				destination[key] = source[key];
+			}
+			console.log("Finishing iteration")
+			
+		}
+		return destination;
+	}
+	
+	console.log(user4);
+</script>
+</body>
+</html>

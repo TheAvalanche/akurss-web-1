@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	console.log("a" in window);
+	console.log("k" in window);
+	console.log("b" in window);
+	console.log("c" in window);
+	console.log(a);
+	console.log(b);
+	console.log(c);
+	
+	b(); //works
+	//c(); //exception
+	
+	var a = 5;
+	function b() {console.log("test")}
+	var c = function() {console.log("test")}
+</script>
+
+</body>
+</html>

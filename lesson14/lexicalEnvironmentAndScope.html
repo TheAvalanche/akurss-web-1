@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	//Window {name: undefined, surname: undefined, greet: function(){...}
+	var name = "John";
+	var surname = "Smith";
+	//Window {name: "John", surname: "Smith", greet: function(){...}}
+	function greet(who) {
+		//LexicalEnvironment {who: "John", hello: undefined}
+		var hello = "Hello";
+		//LexicalEnvironment {who: "John", hello: "Hello"}
+		alert(hello + ", " + who + " " + surname);
+	}
+	
+	greet(name)
+	
+</script>
+
+</body>
+</html>

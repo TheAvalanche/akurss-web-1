@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	
+	var a = "test";
+	
+	function test() {
+		//[[Scope]] == window
+		function doHast() {
+			//[[Scope]] == test.LexicalEnvironment
+			alert(a);
+		}
+		doHast();
+	}
+	
+	test();
+	
+	
+	
+</script>
+
+</body>
+</html>
