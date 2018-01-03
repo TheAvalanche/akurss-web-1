@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	
+	function Animal(name, vegan) {
+		//this = {}
+		
+		var message = "I am running";
+		
+		this.name = name;
+		this.vegan = vegan;
+		
+		this.run = function () {
+			console.log(message);
+		};
+		
+		function isTired() {
+			return vegan;
+		}
+		
+		this.tired = isTired;
+		
+		//return this
+	}
+	
+	var donkey = new Animal("donkey", true);
+	var tiger = new Animal("tiger", false);
+	
+	console.log(donkey);
+	
+	donkey.run();
+	var tired = donkey.tired();
+
+	console.log(tired);
+</script>
+
+</body>
+</html>

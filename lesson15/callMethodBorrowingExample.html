@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<script>
+	function print() {
+		var join = [].join;
+		
+/*		var join = function (delimiter) {
+			var str = "";
+			for (var i = 0; i < this.length; i++) {
+				str += this[i] + delimiter;
+			}
+			return str;
+		};*/
+		
+		var str = join.call(arguments, ", ");
+		
+		alert(str);
+	}
+	
+	print(1, 2, 3, 4, 5); 
+</script>
+</body>
+</html>

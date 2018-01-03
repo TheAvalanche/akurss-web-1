@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<script>
+	var user = {
+		name: "John",
+		sayHi: function() {
+			alert("Hi! " + this.name);
+		}
+	};
+	
+	var user2 = {};
+	user2.name = user.name;
+	user2.sayHi = user.sayHi;
+	
+	user2.sayHi();
+	
+	user2.name = "Patrick";
+	
+	user2.sayHi();
+</script>
+</body>
+</html>

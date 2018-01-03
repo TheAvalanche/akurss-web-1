@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<script>
+	function greet(phrase) {
+		alert(phrase + " " + this.name);
+	}
+	
+	var user = {
+		name: "John"
+	};
+	
+	var user2 = {
+		name: "Patrick"
+	};
+	
+	greet.apply(user, ["Hello"]);
+	greet.apply(user2, ["Hi"]);
+</script>
+</body>
+</html>
