@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script> 
+	
+	var obj = {};
+	var obj2 = {
+		name: "Peter",
+		toString: function () {
+			return this.name;
+		},
+		valueOf: function() {
+			return 1005000;
+		}
+	};
+	var obj3 = undefined;
+	
+	alert(+obj2);
+</script>
+</body>
+</html>
