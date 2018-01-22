@@ -1,0 +1,108 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+   background: -webkit-linear-gradient(#b3b3b0 0%, #e3e2dd 500px);
+   background: -o-linear-gradient(#b3b3b0 0%, #e3e2dd 500px);
+   background: linear-gradient(#b3b3b0 0%, #e3e2dd 500px);
+   font-family: Roboto;
+}
+
+.content {
+	margin: 0 auto;
+	background-color: white;
+	width: 687px;
+	height: 100%;
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+
+.header {
+	padding: 0 15px;
+	height: 60px;
+	background: linear-gradient(to bottom, #646464 0%,#0e0e0e 100%);
+    border-top: 1px solid #444;
+}
+
+.film-name-box {
+	color: white;
+	background-color: #333;
+	padding: 20px;
+}
+
+.image-video-box {
+	background-color: #333; 
+	height: 300px;
+}
+
+.authors-box {
+	margin: 20px;
+}
+
+.about-box {
+	margin: 20px;
+}
+
+.feedback-box {
+	margin: 20px;
+}
+
+.footer-box {
+	padding: 15px 15px 0 0;
+	text-align: right;
+	border-top: 1px solid silver;
+	background-color: #edeeed;
+ 	height: 30px;
+ 	font-size: 12px;
+}
+
+.h1 {
+	font-size: 36px;
+}
+
+.h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.film-img {
+	width: auto;
+	height: 300px;
+}
+
+.link-decor {
+	text-decoration: none;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.padding-bottom-15 {
+	padding-bottom: 15px;
+}
+
+.padding-top-15 {
+	padding-top: 15px;
+}
+
+.logo-img {
+	display: block;
+	margin: 5px auto;
+	width: auto;
+	height: 48px;
+	transform: scale(-1, 1);
+}
+
+.orig-name {
+	margin: 5px 0;
+}
+
+.titleyear {
+	font-size: 25px;
+}
+
+.color-silver {
+	color: silver;
+}
