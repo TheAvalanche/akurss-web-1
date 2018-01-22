@@ -24,4 +24,4 @@ I was extremely lucky to get the chance to see this film upon its first day rele
 
 ![design][design]
 
-[design]: design1.png 
+[design]: design2.png 

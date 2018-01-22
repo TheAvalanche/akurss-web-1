@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IMDb</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+		}
+		.col-1 {
+			float: left;
+			padding: 0 15px;
+			width: 4%;}
+		.col-2 {
+			float: left;
+			padding: 0 15px;
+			width: 16.66%;}
+		.col-3 {
+			float: left;
+			padding: 0 15px;
+			width: 25%;}
+		.col-4 {
+			float: left;
+			padding: 0 15px;
+			width: 33.33%;}
+		.col-5 {
+			float: left;
+			padding: 0 15px;
+			width: 41.66%;}
+		.col-6 {
+			float: left;
+			padding: 0 15px;
+			width: 50%;}
+		.col-7 {
+			float: left;
+			padding: 0 15px;
+			width: 58.33%;}
+		.col-8 {
+			float: left;
+			padding: 0 15px;
+			width: 66.66%;}
+		.col-9 {
+			float: left;
+			padding: 0 15px;
+			width: 75%;}
+		.col-10 {
+			float: left;
+			padding: 0 15px;
+			width: 83.33%;}
+		.col-11 {
+			float: left;
+			padding: 0 15px;
+			width: 91.66%;}
+		.col-12 {
+			float: left;
+			padding: 0 15px;
+			width: 100%;}
+
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		header {
+			padding-top: 5px;
+			height: 60px;
+			background: linear-gradient(to bottom, #646464 0%,#0e0e0e 100%);
+			border-top: 1px solid #444;
+		}
+
+		footer {
+			padding-top: 5px;
+			height: 30px;
+			background: linear-gradient(to bottom, #0e0e0e 0%, #646464 100%);
+			border-top: 1px solid #444;
+			color: white;
+		}
+		
+		.py {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		.my {
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+		.logo-img {
+			height: 48px;
+			transform: scale(-1, 1);
+		}
+		.poster {
+			width: 100%;
+		}
+		.text {
+			position: absolute;
+			left: 60px;
+			top:150px;
+			color: white;
+			font-size: 80px;
+			-webkit-text-stroke-width: 2px;
+			-webkit-text-stroke-color: black;
+		}
+	</style>
+</head>
+<body>
+
+	<header class="row">
+		<div class="col-12">
+			<img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1200px-IMDB_Logo_2016.svg.png" alt="">
+		</div>
+	</header>
+	<main class="row py">
+		<div class="col-4" style="position: relative;">
+			<img class="poster" src="http://www.joblo.com/posters/images/full/interstellar-poster-space.jpg">
+			<p class="text"><b>Don't miss!</b></p>
+		</div>
+		<div class="col-8">
+			<div class="row py">
+				<div class="col-6">
+					<br>
+					<p><i><b>A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</b></i></p>
+					<br>
+					<p><b>Director:</b> Christopher Nolan</p>
+					<p><b>Writers:</b> Jonathan Nolan, Christopher Nolan</p>
+					<p><b>Stars:</b> Matthew McConaughey, Anne Hathaway, Jessica Chastain...</p>
+				</div>
+				<div class="col-6" style="border-left: solid 1px black">
+					<h3>About</h3>
+					<br>
+					<p>Earth's future has been riddled by disasters, famines, and droughts. There is only one way to ensure mankind's survival: Interstellar travel.
+						A newly discovered wormhole in the far reaches of our solar system allows a team of astronauts to go where no man has gone before,
+						a planet that may have the right environment to sustain human life.</p>
+				</div>
+			</div>
+			<hr class="my">
+			<div class="row py">
+				<div class="col-12">
+					<h3>User Reviews</h3><br>
+					<p><b>Author:</b> Calum Rhys from Worcester, United Kingdom</p><br>
+					<p>I was extremely lucky to get the chance to see this film upon its first day release, before entering the cinema, my expectations were already high,
+						after all, this was a film from the cinematic genius who brought us the likes of 'Inception' and 'The Dark Knight', to summarise the following review in a
+						single sentence: I left the cinema in extreme awe from the visual masterpiece I had just viewed. A film that explores the psychological and emotional state
+						of a man whose life revolves around his family, 'Interstellar' is a thrilling and thought-provoking film that boasts an intellectual story masterfully written by the
+						Nolan brothers. Whilst there seems to have been influence from films like '2001: A Space Odyssey' and 'Apollo 13', 'Interstellar' is unique in its own way.
+						Whilst the subject may be hard to comprehend at times, it can't be denied how visually monumental and thoughtful Christopher Nolan's epic science fiction masterpiece is,
+						and can easily be named the best film of this year and possibly one of the greatest science fiction films to have ever graced the screen. A sheer
+						brilliant feat of cinema. </p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="row">
+		<div class="col-12">
+			Copyright 2017
+		</div>
+	</footer>
+
+</body>
+</html>
