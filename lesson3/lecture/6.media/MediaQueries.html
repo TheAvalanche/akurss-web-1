@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Media Queries</title>
+	<style>
+		div {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+
+		@media (min-width: 720px) and (max-width: 1024px) {
+			div {
+				background-color: blue;
+			}
+		}
+
+		@media (min-width: 1024px) {
+			div {
+				background-color: yellow;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div>Resize to see the effect</div>
+</body>
+</html>
