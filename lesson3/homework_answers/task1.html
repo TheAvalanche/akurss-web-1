@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Скачать новый альбом группы Metallica</title>
+	<style>
+		.box {
+			height: 35rem;
+			border: solid 1px black;
+			border-radius: 1rem;
+			display: inline-block;
+			vertical-align: top;
+			padding: 2rem 1.5rem;
+		}
+
+		label {
+			display: inline-block;
+			width: 9rem;
+		}
+
+		input, textarea, select {
+			width: 15rem;
+			height: 2rem;
+			border: solid 1px gray;
+			border-radius: 1rem;
+			margin: 0.75rem 0;
+			vertical-align: middle;
+		}
+
+		textarea {
+			height: 4rem;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Скачать новый альбом группы Metallica</h1>
+	<h2>Бесплатно. Без регистрации и SMS.</h2>
+	<p>Естественно, мы вас обманули. Войдите в систему или зарегистрируйтесь.</p>
+	<br>
+	<div class="box">
+		<form action="/mockURL1" method="post">
+			<h3>Войти в систему</h3>
+			<label for="login">Логин</label>
+			<input type="text" name="login" id="login"><br>
+			<label for="pass">Пароль</label>
+			<input type="password" name="pass" id="pass"><br>
+			<input type="submit" value="Войти">
+		</form>
+	</div>
+	<div class="box" style="margin-left: 1rem;">
+		<form action="/mockURL2" method="post">
+			<h3>Зарегистрироватся</h3>
+			<label for="name">Имя</label>
+			<input type="text" name="name" id="name"><br>
+			<label for="surname">Фамилия</label>
+			<input type="text" name="surname" id="surname"><br>
+			<label for="email">Почта</label>
+			<input type="email" name="email" id="email"><br>
+			<label for="cc-number">Номер карточки</label>
+			<input type="text" name="cc-number" id="cc-number"><br>
+			<label for="cc-pass">Пароль от карточки</label>
+			<input type="password" name="cc-pass" id="cc-pass"><br>
+			<label for="question">Секретный вопрос</label>
+			<select name="question" id="question">
+				<option value="question1" selected>Как я провёл лето</option>
+				<option value="question2">Пароль от WIFI</option>
+				<option value="question3">Srsly bro?</option>
+			</select>
+			<br>
+			<label for="answer">Ответ на секретный вопрос</label>
+			<textarea name="answer" id="answer"></textarea>
+			<br>
+			<input type="submit" value="Регистрация">
+		</form>
+	</div>
+</body>
+</html>
