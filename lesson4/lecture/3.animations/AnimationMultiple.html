@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		@keyframes move {
+			from {
+				transform: translate(0, 0);
+			}
+			to {
+				transform: translateX(100px);
+			}
+		}
+
+		@keyframes pulse {
+			from {
+				background-color: red;
+			}
+			to {
+				background-color: green;
+			}
+		}
+
+		.element {
+			height: 250px;
+			width: 250px;
+			background-color: red;
+			animation: move 5s linear, pulse 10s;
+		}
+	</style>
+</head>
+<body>
+<div class="element"></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		@keyframes stretch {
+			0% {
+				transform: scale(.3);
+				background-color: red;
+				border-radius: 100%;
+			}
+			50% {
+				background-color: orange;
+			}
+			100% {
+				transform: scale(1.5);
+				background-color: yellow;
+			}
+		}
+
+		.element {
+			height: 250px;
+			width: 250px;
+			margin: 0 auto;
+			background-color: red;
+			animation-name: stretch;
+			animation-duration: 1.5s;
+			animation-delay: 2s;
+			animation-iteration-count: infinite;
+		}
+	</style>
+</head>
+<body>
+<div class="element"></div>
+</body>
+</html>

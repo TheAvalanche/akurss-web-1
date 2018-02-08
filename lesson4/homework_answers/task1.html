@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		@keyframes move {
+			0% {
+				transform: translate(0);
+			}
+			50% {
+				transform: translate(500px) rotate(0deg);
+			}
+			100% {
+				transform: translate(0) rotate(-360deg);
+			}
+		}
+
+		#mario {
+			animation: move 5s linear infinite;
+		}
+	</style>
+</head>
+<body>
+<img id="mario" src="https://supermariorun.com/assets/img/stage/mario03.png" alt="" width="200px">
+</body>
+</html>

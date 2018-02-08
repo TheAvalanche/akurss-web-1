@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		@keyframes pulse {
+			from {
+				background-color: blue;
+			}
+			to {
+				background-color: green;
+			}
+		}
+
+		.element {
+			height: 250px;
+			width: 250px;
+			background-color: red;
+			animation: pulse 4s linear 2s;
+			animation-fill-mode: forwards;
+		}
+	</style>
+</head>
+<body>
+<div class="element"></div>
+</body>
+</html>
