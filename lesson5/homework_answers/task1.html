@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+	img {
+		width: 300px;
+		height: 300px;
+	}
+
+	.mario {
+		position: absolute;
+		top: 25px;
+		left: 0;
+	}
+
+	.grib {
+		position: absolute;
+		top: 25px;
+		right: 0px;
+	}
+
+	</style>
+	<meta charset="UTF-8">
+	<title>Mario</title>
+	<link rel="stylesheet" href="style6.css">
+</head>
+<body>
+	<button type="button" onclick="move()">Move</button>
+
+
+	<div id="mario" class="mario">
+		<img src="https://supermariorun.com/assets/img/stage/mario03.png" alt="">
+	</div>
+	<div id="mashroom" class="grib">
+		<img src="https://image.freepik.com/free-vector/no-translate-detected_642169.jpg" alt="">
+	</div>
+
+<script>
+
+var position = 0;
+
+function move() {	
+  position = position + 10;
+  document.getElementById('mario').style.left = position + 'px';
+}
+
+</script>	
+
+
+</body>
+</html>
