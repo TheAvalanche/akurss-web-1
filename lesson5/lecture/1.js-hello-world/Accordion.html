@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		.accordion {
+			background-color: #eeeeee;
+			color: #444444;
+			cursor: pointer;
+			padding: 1rem;
+			width: 100%;
+			transition: 0.4s;
+		}
+		
+		.accordion:hover {
+			background-color: #cccccc;
+		}
+		
+		.panel {
+			padding: 1rem;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="accordion" onclick="toggle('panel1')">Section 1</div>
+	<div class="panel" id="panel1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque culpa eius eligendi expedita molestiae! A cupiditate dignissimos dolorem quidem sed similique? Atque quis reprehenderit saepe. Adipisci eum sapiente soluta voluptate!
+	</div>
+
+	<div class="accordion" onclick="toggle('panel2')">Section 2</div>
+	<div class="panel" id="panel2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque culpa eius eligendi expedita molestiae! A cupiditate dignissimos dolorem quidem sed similique? Atque quis reprehenderit saepe. Adipisci eum sapiente soluta voluptate!
+	</div>
+
+	<div class="accordion" onclick="toggle('panel3')">Section 3</div>
+	<div class="panel" id="panel3">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque culpa eius eligendi expedita molestiae! A cupiditate dignissimos dolorem quidem sed similique? Atque quis reprehenderit saepe. Adipisci eum sapiente soluta voluptate!
+	</div>
+
+	<script>
+		function toggle(id) {
+			var panel = document.getElementById(id);
+			
+			if (panel.style.display === "block") {
+				panel.style.display = "none";
+			} else {
+				panel.style.display = "block";
+			}
+		}
+		
+	</script>
+</body>
+</html>
