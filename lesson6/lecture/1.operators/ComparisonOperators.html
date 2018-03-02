@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	//inumber comparison
+	var a = 10;
+	var b = 20;
+	
+	console.log(a == b); // false
+	console.log(a == 10); // true
+	console.log(a > b); //false
+	console.log(a < b); //true
+	
+	//string comparisn
+	console.log("A" > "Z"); //false
+	console.log("a" > "Z"); //true
+	console.log("Apple" > "Application"); // false
+	console.log("App" > "Apple"); //false
+	console.log("2" > "14"); // true
+	
+	//different types comparison
+	console.log("2" > 14); //false
+	console.log(false == 0); //true
+	console.log("" == false); //true
+	
+	console.log(false === 0); //false
+	console.log("" === false); //false
+	
+	console.log(NaN == NaN); //false
+	console.log(NaN === NaN); //false
+	
+	console.log(null == null); //true
+	console.log(null == 0); //false
+	console.log(null == undefined); //true
+	console.log(undefined == undefined); //true
+	console.log(undefined == 0); //false
+	
+</script>
+
+</body>
+</html>

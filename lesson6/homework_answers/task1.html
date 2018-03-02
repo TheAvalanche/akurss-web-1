@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mario</title>
+</head>
+<body>
+
+	<label for="example">Input</label>
+	<input type="text" id="example" oninput="react()">
+	<div>Output: <span id="output"></span></div>
+	<div>Type of output: <span id="output2"></span></div>
+	<div>Value == 123: <span id="output3"></span></div>
+	<div>Value === 123: <span id="output4"></span></div>
+
+	<script>
+
+		function react() {
+			var value = document.getElementById("example").value;
+			document.getElementById("output").innerHTML = value;
+			document.getElementById("output2").innerHTML = typeof value;
+			document.getElementById("output3").innerHTML = value == 123;
+			document.getElementById("output4").innerHTML = value === 123;
+		}
+
+	</script>	
+
+
+</body>
+</html>

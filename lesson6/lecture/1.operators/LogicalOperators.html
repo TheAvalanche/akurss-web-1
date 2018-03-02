@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	var a = +prompt("What is a sqrt of 4?");
+	
+	var result = a === 2 || a === -2;
+	console.log("You are right: " + result);
+	
+	var b = +prompt("Enter any positive even number:");
+	result = b > 0 && b % 2 === 0;
+	console.log("You have entered right value: " + result);
+	
+	var c = +prompt("Enter current hour:");
+	var isOpened = c >= 9 && c <= 18;
+	console.log("The shop is closed: " + !isOpened);
+</script>
+	
+
+</body>
+</html>
