@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	var arr = [];
+
+	var arr2 = ["Apple", "Orange", "Pear"];
+	
+	console.log(arr2[0]);
+	console.log(arr2[1]);
+	console.log(arr2[2]);
+	
+	arr2[1] = "Banana";
+	arr2[3] = "Pineapple";
+	
+	console.log(arr2.length);
+	
+	for (var i = 0; i < arr2.length; i++) {
+		console.log(arr2[i]);
+	}
+
+	console.log(arr2);
+	arr2.push("Peach");
+	console.log(arr2);
+	console.log(arr2.pop());
+	console.log(arr2);
+	arr2.unshift("Peach");
+	console.log(arr2);
+	console.log(arr2.shift());
+	console.log(arr2);
+</script>
+	
+</body>
+</html>

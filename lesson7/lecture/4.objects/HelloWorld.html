@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	var user = {};
+	
+	user.name = "John";
+	user.age = 25;
+	
+	console.log(user.name + " " + user.age);
+	
+	delete user.age;
+	
+	console.log(user);
+	
+	var user2 = {
+		name: "John",
+		surname: "Doe",
+		age: 25
+	};
+	
+	console.log(user2);
+	
+	var user3 = {
+		name: "John",
+		surnaee: "Doe",
+		age: 70,
+		address: {
+			street: "Abbey Road str.",
+			city: "London",
+			country: "GB"
+		}
+	};
+	
+	console.log(user3);
+	console.log(user3.address.country);
+	
+	user3.age = 50;
+	user3["age"] = 30;
+	console.log(user3["age"]);
+	
+	var prop = "age";
+	console.log(user3[prop]);
+	
+	if ("name" in user3) {
+		console.log("Name property exists");
+	}
+	
+	if (user3.name) {
+		console.log("Name property exists");
+	}
+	
+	for (var key in user2) {
+		console.log("Key: " + key + " Value: " + user2[key]);
+	}
+</script>
+	
+
+</body>
+</html>

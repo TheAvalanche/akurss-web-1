@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	var input = prompt("Enter number:");
+	
+	if (!isNumeric(input)) {
+		alert("This is not a number!!!");
+	}
+	
+	function isNumeric(input) {
+		return !isNaN(parseFloat(input)) && isFinite(input);
+		
+		//isFinite filters Infinite/-Infinite/NaN
+		//parseFloat returns NaN for null/false/true/""
+		//!isNaN filters NaN
+	}
+</script>
+	
+
+	
+
+</body>
+</html>

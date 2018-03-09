@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	
+	function getRandom() {
+		return Math.floor(Math.random() * 100);
+	}
+	
+	var guessed = getRandom();
+	
+	while (true) {
+		
+		var input = +prompt("Enter your number:");
+		
+		if (input > guessed) {
+			alert("Guessed number is smaller");
+		} else if (input < guessed) {
+			alert("Guessed number is bigger");
+		} else {
+			alert("BINGO!!!");
+			break;
+		}
+		
+	}
+	
+</script>
+
+</body>
+</html>
