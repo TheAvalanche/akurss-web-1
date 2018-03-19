@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+	<script>
+		
+		var names = ["John", "Anna", "Jack", "Fredrik", "Jan"];
+		
+		names.splice(2, 2, "George", "Peter");
+		
+		console.log(names);
+		
+		names.splice(2, 0, "Jill", "Kate");
+		
+		console.log(names);
+		
+		var names2 = names.slice(0, 4);
+		
+		console.log(names2);
+		
+		var names3 = names.slice(3);
+		
+		console.log(names3);
+		
+		var names4 = names.slice();
+		
+		console.log(names4);
+	</script>
+
+</body>
+</html>

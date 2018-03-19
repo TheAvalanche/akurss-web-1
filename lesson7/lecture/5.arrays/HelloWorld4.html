@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+	<script>
+		
+		var arr = [8848, 8481, 3145, 8611, 314, 7495, 5];
+		
+		arr.sort();
+		
+		alert(arr);
+		
+		function compareNumbers(a, b) {
+			if (a > b) {
+				return 1;
+			} else if (a < b) {
+				return -1;		
+			} else {
+				return 0;
+			}
+		}
+		
+		arr.sort(compareNumbers);
+		alert(arr);
+		arr.reverse();
+		alert(arr);
+		
+	</script>
+
+</body>
+</html>

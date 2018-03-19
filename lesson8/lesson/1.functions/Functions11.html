@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<script>
+	
+	function sum() {
+		console.log(arguments);
+		var result = 0;
+		for (var i = 0; i < arguments.length; i ++) {
+			result += arguments[i];
+		}
+		return result;
+	}
+	
+	console.log(sum(5, 10));
+	console.log(sum(16, 15, 98, 15))
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	
+	function ask(question, yesCallback, noCallback) {
+		if (confirm(question)) {
+			yesCallback();
+		} else {
+			noCallback();
+		}
+	}
+	
+	ask("Are you happy?", function() {
+		alert("OK")
+	}, function() {
+		alert("Cancel");
+	});
+	
+</script>
+
+</body>
+</html>

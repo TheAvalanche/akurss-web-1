@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+	<script>
+		
+		function pow(num, pakape) {
+			var result = num;
+			for (var i = 1; i < pakape; i++) {
+				result *= num;
+			}
+			return result;
+		}
+		
+		console.log(pow(2, 3));
+		console.log(pow(10, 10));
+		console.log(pow(2, 32) - 1);
+		
+		function showMovie(age) {
+			
+			if (age < 18) {
+				return;
+			}
+			
+			alert("Good movie");
+		}
+		
+		showMovie(15);
+		showMovie(20);
+		
+	</script>
+
+</body>
+</html>

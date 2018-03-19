@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	
+	var age = +prompt("Enter your age?");
+	
+	var greet;
+	
+	if (age >= 18) {
+		greet = function() {
+			alert("Hello");
+		}
+	} else if (age >= 16) {
+		greet = function () {
+			var message = "Restricted";
+			alert(message);
+		}
+	} else {
+		greet = function () {
+			alert("Not allowed");
+		}
+	}
+	
+	greet();
+	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	var arr = ["Apple", "Orange", "Banana"];
+	
+	console.log(arr[0]); //Apple
+	
+	var names = "Latvia, Germany, Britain, Italy, Kazakhstan, Norway";
+	
+	var countryNames = names.split(", ");
+	
+	for (var i = 0; i < countryNames.length; i ++) {
+		alert(countryNames[i]);
+	}
+	
+	names = countryNames.join("-");
+	alert(names)
+</script>
+	
+</body>
+</html>
