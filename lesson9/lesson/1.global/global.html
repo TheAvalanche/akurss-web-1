@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	
+	//1 Phase
+	// window { a: undefined, test: function() {...}, test2: undefined }
+	
+	//2 Phase
+	var a = 15;
+	// window { a: 15, test: function() {...}, test2: undefined }
+	test();
+	
+	function test() { //Function Declaration
+		alert(a);
+	}
+	
+	test2();
+	// Error: 
+	
+	var test2 = function() { //Function Initialisation
+		alert("Hello!")
+	}
+	
+</script>
+
+</body>
+</html>

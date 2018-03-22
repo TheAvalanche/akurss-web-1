@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	
+	// LexicalEnvironment
+	// {test: function; hello: function}
+	
+	function test() {
+		//Lexical Environment
+		//{{Scope}} <- window
+		
+		hello();
+	}
+	
+	function hello() {
+		//Lexical Environment
+		//{{Scope}} <- window
+		
+		alert("Hello");
+	}
+	
+	test();
+	
+</script>
+
+</body>
+</html>

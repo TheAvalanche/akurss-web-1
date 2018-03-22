@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	
+	// 1Phase: 
+	// window == LexicalEnvironment
+	// {test: function() {...}
+	
+	function test(name) {
+		// 1 Phase
+		// LexicalEnvironment
+		// {name: "World", phrase: undefined}
+		// [[Scope]] <= window
+		
+		// 2 Phase
+		var phrase = "Hello, " + name;
+		// LexicalEnvironment
+		// {name: "World", phrase: "Hello, world"}
+		alert(phrase); //alert goes from [[Scope]]
+	}
+	
+	test("World");
+	
+</script>
+
+</body>
+</html>

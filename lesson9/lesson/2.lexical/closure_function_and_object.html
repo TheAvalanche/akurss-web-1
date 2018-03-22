@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	
+	function makeCounter() {
+		
+		var count = 0;
+		
+		function counter() {
+			return ++count;
+		}
+		
+		counter.previous = function() {
+			return --count;
+		};
+		
+		counter.reset = function() {
+			return count = 0;
+		};
+		
+		return counter;
+		
+	}
+	
+	var counter = makeCounter();
+	console.log(counter());
+	console.log(counter());
+	console.log(counter());
+	console.log(counter.reset());
+	console.log(counter.previous());
+	console.log(counter.previous());
+	
+	
+</script>
+
+</body>
+</html>

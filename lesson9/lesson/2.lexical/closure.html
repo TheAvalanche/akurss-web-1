@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	
+	function makeCounter() {
+		// Lexical Enviroament
+		// {count: undefined, increment: function ...}
+		var count = 0;
+		// {count: 0, increment: function ...}
+		function increment() {
+			//Lexical Environment
+			//[[Scope]] - {count: 0}
+			count = count + 1;
+			return count;
+		}
+		
+		return increment;
+	}
+	
+	var counter = makeCounter();
+	var counter2 = makeCounter();
+	
+	console.log(counter());
+	console.log(counter());
+	console.log(counter());
+	console.log(counter2());
+	console.log(counter2());
+	console.log(counter2());
+</script>
+
+</body>
+</html>
