@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	
+	var user = {
+		name: "John",
+		sayHi: function() {
+			console.log("Hello! My name is " + this.name);
+	}
+	};
+	
+	user.sayHi();
+	
+	user.sayHi =  function () {
+		console.log("Hi! My name is " + showName(this));
+	};
+	
+	user.sayHi();
+	
+	function showName(obj) {
+		return "<" + obj.name + ">";
+	}
+	
+	function sayBye() {
+		console.log("Goodbye! My name was " + this.name);
+	}
+	
+	sayBye();
+	
+	user.bye = sayBye;
+	
+	user.bye();
+	
+	
+</script>
+
+</body>
+</html>

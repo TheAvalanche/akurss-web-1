@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+	<button onclick="show()">Show message</button>
+	
+	<div id="message"></div>
+	
+	<script>
+		
+		(function() {
+			var message = "Hello";
+			
+			window.show = function() {
+				document.getElementById("message").innerHTML = message;
+			}
+		})();
+	</script>
+
+	<script>
+		(function() {
+			var name = "John";
+			var message = "Hello";
+
+			function show() {
+				alert(message + " " + name);
+			}
+
+			show();
+		})();
+		
+	</script>
+</body>
+</html>

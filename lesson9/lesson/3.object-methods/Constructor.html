@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	
+	var name = "John";
+	
+	function User(firstName, surname) { // this = {}
+		this.name = firstName; //{name: "Anna"}
+		this.lastName = surname; // {name: "Anna", lastName: "Smith"}
+		
+		var greeting = "Hello, my name is ";
+		
+		this.sayHi = function() { //{name: ""Anna", lastName: "Smith", sayHi: ...}
+			console.log(greeting + getFullName());
+		};
+		this.sayBye = function() { //{name: ""Anna", lastName: "Smith", sayHi: ..., sayBye: ...}
+			console.log("Goodbye, my name is " + getFullName());	
+		};
+		
+		function getFullName() {
+			return firstName + " " + surname;
+		}
+	}
+	
+	var anja = new User("Anna", "Smith");
+	var petja = new User("Peter", "Doe");
+	
+	anja.sayHi();
+	petja.sayHi();
+	anja.sayBye();
+	petja.sayBye();
+	
+	anja.getFullName(); //won't work
+	
+</script>
+
+
+</body>
+</html>
